@@ -46,24 +46,36 @@ thead{
 tr {
     height: 60px;
 }
-tr:nth-child(odd){
+tr:nth-child(odd)> td:nth-child(odd){
     background: #DBDBDB;
 }
-tr:nth-child(even){
+tr:nth-child(odd)> td:nth-child(even){
     background: #ECECEC;
 }
+tr:nth-child(even)> td:nth-child(odd){
+    background: #ECECEC;
+}
+tr:nth-child(even)> td:nth-child(even){
+    background: #ffffff;
+}
+tr:nth-child(odd)> th:nth-child(odd){
+    background: #DBDBDB;
+}
+tr:nth-child(odd)> th:nth-child(even){
+    background: #ECECEC;}
 
 .tr > .td{
     text-align: left;
+    padding: 10px  20px;
 }
 a{
     color: #2b2a2a;
     display: block;
     width: 100px;
-    height: 50px;
     text-decoration: none;
-    padding: 5px 20px;
+    padding: 15px 20px;
     border: 1px solid #2b2a2a;
     background: #908f8f;
     margin: 5px 20px;
+
 }
